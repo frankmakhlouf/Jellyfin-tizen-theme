@@ -136,7 +136,7 @@
 .section0,
 .headerTabs,
 .nowPlayingBar {
-  transition: all 120ms linear !important; /* shortened duration */
+  transition: none !important; /* shortened duration */
 }
 
 
