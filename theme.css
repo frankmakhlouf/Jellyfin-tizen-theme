@@ -17,39 +17,39 @@
   }
 
 
-/* ----------------------------------------------------- */
-/*                  SEASONS HORIZONTALLY                */
-/* ----------------------------------------------------- */
-/* Make seasons scroll horizontally */
-.layout-tv #childrenContent .childrenItemsContainer {
+/* --------------------------------------------------------------------- */
+/*      SEASONS HORIZONTALLY — Scoped Only to Seasons    */
+/* --------------------------------------------------------------------- */
+/* Target seasons only by checking for season cards inside the container */
+.layout-tv #childrenContent .childrenItemsContainer:has(.card[data-type="Season"]) {
   display: flex !important;
   flex-direction: row !important;
   overflow-x: auto !important;
   overflow-y: hidden !important;
   scroll-snap-type: x mandatory;
-  padding-bottom: 1em; /* Adds space under the row */
-  gap: 0em; /* spacing between season cards */
-  padding-top: 0.6em; 
+  padding-bottom: 1em;
+  padding-top: 0.6em;
+  gap: 0em;
 }
-/* Remove vertical wrap override */
-.layout-tv #childrenContent .vertical-wrap {
+/* Prevent wrapping for season scroller */
+.layout-tv #childrenContent .childrenItemsContainer:has(.card[data-type="Season"]).vertical-wrap {
   flex-wrap: nowrap !important;
 }
-/* Ensure each season card aligns nicely */
-.layout-tv #childrenContent .card.overflowPortraitCard {
+/* Styling for each season card */
+.layout-tv #childrenContent .childrenItemsContainer:has(.card[data-type="Season"]) .card.overflowPortraitCard {
   scroll-snap-align: start;
   flex: 0 0 auto;
-  width: 21vw !important; /* Adjust for screen size */
+  width: 21vw !important;
   aspect-ratio: 2 / 3 !important;
   height: auto !important;
-  padding-left: 0.8em !important; 
+  padding-left: 0.8em !important;
 }
-/* Hide horizontal scrollbar */
-.layout-tv #childrenContent .childrenItemsContainer {
+/* Hide scrollbar for the season row only */
+.layout-tv #childrenContent .childrenItemsContainer:has(.card[data-type="Season"]) {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
 }
-.layout-tv #childrenContent .childrenItemsContainer::-webkit-scrollbar {
+.layout-tv #childrenContent .childrenItemsContainer:has(.card[data-type="Season"])::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
