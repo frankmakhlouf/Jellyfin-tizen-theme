@@ -106,7 +106,7 @@
 .layout-tv .cardBox.visualCardBox,
 .layout-tv .blurhash-canvas,
 .layout-tv .cardScalable {
-  border-radius: 13px !important;
+  border-radius: 16px !important;
 }
 
 /* Remove Zesty's default oversized focus border */
@@ -114,13 +114,13 @@
 .layout-tv .card.show-focus .cardScalable {
   border: none !important;
   box-shadow: none !important;
-  border-radius: 13px !important;
+  border-radius: 16px !important;
 }
 
 /* Add clean white border when focused */
 .layout-tv .card:focus-within .cardImageContainer {
   border: 0.3em solid rgba(var(--accent), 0.75) !important;
-  border-radius: 13px !important;
+  border-radius: 16px !important;
   outline: none !important;
 }
 
