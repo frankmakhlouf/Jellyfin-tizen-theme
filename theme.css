@@ -141,9 +141,13 @@
 .layout-tv .secondary.listItem-overview.listItemBodyText {
   height: auto !important;
 }
-.layout-tv .itemName.infoText.subtitle {
-  font-size: 1.9em !important;
+.layout-tv .parentName {
+  font-size: 1.8em !important;
   font-weight: 600 !important;
+}
+.layout-tv .itemName.infoText.subtitle {
+  font-size: 1.6em !important;
+  font-weight: 500 !important;
 }
 .layout-tv .mainDetailButtons {
   padding-top: 0.2em !important;
