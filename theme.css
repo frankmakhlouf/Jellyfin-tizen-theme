@@ -92,6 +92,11 @@ body,
 }
 
 
+/* Hide the top header tab buttons entirely */
+.headerTabs.sectionTabs {
+  display: none !important;
+}
+
 
 /* -------- HIDE TABS 4 & 5--------- */
 /* Hide tab 5 in the top navigation bar */
@@ -103,15 +108,6 @@ body,
     display: none !important;
 }
 
-/* Add bottom padding to the main top header bar */
-.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
-  padding-bottom: 0.3em !important;
-}
-
-/* Move the header tabs upward */
-.headerTabs.sectionTabs {
-  margin-top: -3.6em !important;
-}
 
 
 /* ------Completely hide the Guest section------ */
@@ -2135,7 +2131,7 @@ body,
   }
   
 .layout-tv {
-	font-size: 170% !important;
+	font-size: 185% !important;
 }
 
 .layout-tv .card:focus .cardBox.visualCardBox, .layout-tv .card:focus .cardBox:not(.visualCardBox) .cardScalable {
@@ -2161,10 +2157,6 @@ body,
 	box-shadow: 2px 3px 16px rgba(var(--dark),0.45);
 }
 
-.layout-tv .sectionTabs {
-	width: auto !important;
-	align-self: center !important;
-}
 
 ---------------------------------------------------------
 
