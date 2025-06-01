@@ -255,8 +255,8 @@
   border-radius: 24px !important;
 }
 .layout-tv .secondary.listItem-overview.listItemBodyText {
-  padding: 0.2em 0.3em !important;
-  font-size: 70% !important;
+  padding: 0.1em 0.1em !important;
+  font-size: 65% !important;
 }
 .layout-tv .listItemImage.listItemImage-large-tv {
   height: 7.5em !important;
@@ -2252,10 +2252,10 @@
 }
 
 .layout-tv #childrenContent .listItem {
-	padding-left: 0.8em !important;
-	padding-right: 0.7em !important;
-	padding-top: 0.2em !important;
-	padding-bottom: 0.2em !important;
+	padding-left: 0.6em !important;
+	padding-right: 0.2em !important;
+	padding-top: 0em !important;
+	padding-bottom: 0em !important;
 	border-radius: 34px !important;
 }
 
@@ -2272,14 +2272,6 @@
 	border-radius: 0px 38px 0px 38px !important;
 }
 
-.layout-tv .listItemBody {
-	padding: 1.35em 1.75em;
-	font-size: 114%;
-}
-
-.layout-tv .secondary.listItem-overview.listItemBodyText {
-	height: 7.5em;
-}
 
 .layout-tv .verticalSection h2 {
   font-size: 1.65em;
