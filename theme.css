@@ -1947,6 +1947,39 @@ body, h1, h2, h3, h4 {
   }
 
 
+  /* AppleTV-esque bar */
+
+
+  /* Transparent header bar */
+  .skinHeader {
+      background-color: transparent !important;
+  }
+  .layout-desktop .skinHeader {
+      padding-top: 1.5em !important;
+      padding-bottom: 1.5em !important;
+  }
+
+  /* Button height */
+  .headerRight,
+  .layout-desktop .emby-tab-button {
+      height: 45px !important;
+  }
+
+  /* fixes issue with text no being centered */
+  .emby-tab-button {
+    display: inline-flex;
+  }
+
+  /* Rounded header buttons */
+
+  .headerTabs,
+  .headerRight {
+      background-color:rgba(var(--white-off), 0.35) !important;
+      border-radius: var(--rounding-circle) !important;
+      color: rgba(var(--darkest)) !important;
+      backdrop-filter: blur(50px) !important;
+  }
+
   .homeLibraryText, .emby-button-foreground {
 	  color: rgb(var(--darkest));
   }
@@ -1958,6 +1991,13 @@ body, h1, h2, h3, h4 {
     width: fit-content !important;
   }
 
+  .layout-desktop .itemsContainer, .layout-desktop .emby-tabs-slider {
+	  margin: 0 !important;
+  }
+
+  .layout-desktop .homeLibraryButton, .layout-desktop .emby-tab-button {
+	  margin: .5em !important;
+  }
 
   .raised:hover .homeLibraryText, .emby-tab-button:hover .emby-button-foreground {
 	  color: rgb(var(--darkest)) !important;
@@ -2149,7 +2189,53 @@ body, h1, h2, h3, h4 {
 }
 
 
----------------------------------------------------------
+
+.layout-tv .sectionTabs {
+	width: auto !important;
+	align-self: center !important;
+	margin-top: -1em;
+}
+
+.layout-tv .emby-tabs-slider .emby-button.show-focus:focus {
+	background: rgba(var(--accent),0.5) !important;
+	color: rgb(var(--dark));
+	border-radius: var(--rounding-circle);
+}
+
+.layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
+  background-color: inherit;
+}
+
+.layout-tv .emby-tab-button.emby-button.show-focus,
+.layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
+  margin: 0.4em;
+  height: 3.6em;
+}
+
+/* Turn off TabBar animation */
+
+.layout-tv .emby-tab-button.show-focus:focus {
+	-webkit-transform: none !important;
+	transform: none !important;
+}
+.layout-tv .emby-tab-button.show-focus:focus {
+	-webkit-transform: none !important;
+	transform: none !important;
+}
+.layout-tv .emby-tab-button.show-focus:focus {
+	-webkit-transform: none !important;
+	transform: none !important;
+}
+.layout-tv .emby-button.show-focus:focus {
+	-webkit-transform: none !important;
+	transform: none !important;
+	background-color: rgba(var(--accent),.75) !important;
+	padding: 0.4em;
+	padding-right: 0.8em;
+	padding-left: 0.7em;
+	border-radius: 16px;   /* update */
+	color: rgb(var(--dark)) !important;
+}
 
 .layout-tv .headerRight {
 	height: auto !important;
