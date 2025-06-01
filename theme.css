@@ -1,10 +1,5 @@
-@import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/gray.css');
-
-/*---FONT---*/
-body, h1, h2, h3, h4 {
-  font-family: Tahoma, sans-serif !important;
-}
-
+  @import url('https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/gray.css');
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {font-family: 'Quicksand', sans-serif;}
 
   :root {
     --white: 243, 242, 243;           /* F3F2F3 */
@@ -37,7 +32,7 @@ body, h1, h2, h3, h4 {
   padding-top: 0.6em; 
 }
 /* Remove vertical wrap override */
-.layout-tv #childrenContent .vertical-wrap {none120ms
+.layout-tv #childrenContent .vertical-wrap {
   flex-wrap: nowrap !important;
 }
 /* Ensure each season card aligns nicely */
@@ -141,7 +136,7 @@ body, h1, h2, h3, h4 {
 .section0,
 .headerTabs,
 .nowPlayingBar {
-  transition: none !important; /* shortened duration */
+  transition: all 120ms linear !important; /* shortened duration */
 }
 
 
@@ -178,8 +173,8 @@ body, h1, h2, h3, h4 {
 
 /* Reduce font of title and description */
 .layout-tv .cardText.cardText-first {
-  font-size: 115% !important;
-  font-weight: 550 !important;
+  font-size: 105% !important;
+  font-weight: 500 !important;
   margin-top: 0.4em;
 }
 .layout-tv .cardText.cardText-secondary {
@@ -1011,7 +1006,7 @@ body, h1, h2, h3, h4 {
   .formDialogHeader,
   .formDialogFooter {
       background-color: rgba(var(--accent),0.15) !important;
-      backdrop-filter: blur(20px); 
+  /*    backdrop-filter: blur(20px); */
   }
   /*Fix footers/headers displaying on small pop-ups*/
   .formDialogFooter-clear,
@@ -1631,7 +1626,7 @@ body, h1, h2, h3, h4 {
 
   /* dialogs */
   .dialog, .mainDrawer, .appfooter {
-	  backdrop-filter: blur(21px);  
+	  backdrop-filter: blur(21px);
 	  background-color: rgba(var(--dark), 0.75) !important;
 	  box-shadow: 0 0 1.9vh #000;
   }
@@ -1664,7 +1659,7 @@ body, h1, h2, h3, h4 {
   .dialog,
   .mainDrawer,
   .toast {
-  /*  backdrop-filter: blur(21px); */
+    backdrop-filter: blur(21px);
     box-shadow: 0 0 1.9vh #000;
   }
 
@@ -1679,7 +1674,7 @@ body, h1, h2, h3, h4 {
   .navMenuOption-selected, .selectionCommandsPanel {
 	  color: rgba(var(--darkest), 1) !important;
 	  background-color: rgba(var(--accent), 0.55) !important;
-/*	  backdrop-filter: blur(4px); */
+	  backdrop-filter: blur(4px);
   }
 
   .raised, .fab, a[data-role="button"] {
@@ -1721,7 +1716,7 @@ body, h1, h2, h3, h4 {
 
   #childrenContent .listItem:hover:not(.listItem-button) {
 	  background-color: rgba(var(--darkest),0.6);
-/*	  backdrop-filter: blur(6px); */
+	  backdrop-filter: blur(6px);
   }
 
   /* collapsable menu */
@@ -1947,39 +1942,6 @@ body, h1, h2, h3, h4 {
   }
 
 
-  /* AppleTV-esque bar */
-
-
-  /* Transparent header bar */
-  .skinHeader {
-      background-color: transparent !important;
-  }
-  .layout-desktop .skinHeader {
-      padding-top: 1.5em !important;
-      padding-bottom: 1.5em !important;
-  }
-
-  /* Button height */
-  .headerRight,
-  .layout-desktop .emby-tab-button {
-      height: 45px !important;
-  }
-
-  /* fixes issue with text no being centered */
-  .emby-tab-button {
-    display: inline-flex;
-  }
-
-  /* Rounded header buttons */
-
-  .headerTabs,
-  .headerRight {
-      background-color:rgba(var(--white-off), 0.35) !important;
-      border-radius: var(--rounding-circle) !important;
-      color: rgba(var(--darkest)) !important;
-      backdrop-filter: blur(50px) !important;
-  }
-
   .homeLibraryText, .emby-button-foreground {
 	  color: rgb(var(--darkest));
   }
@@ -1991,13 +1953,6 @@ body, h1, h2, h3, h4 {
     width: fit-content !important;
   }
 
-  .layout-desktop .itemsContainer, .layout-desktop .emby-tabs-slider {
-	  margin: 0 !important;
-  }
-
-  .layout-desktop .homeLibraryButton, .layout-desktop .emby-tab-button {
-	  margin: .5em !important;
-  }
 
   .raised:hover .homeLibraryText, .emby-tab-button:hover .emby-button-foreground {
 	  color: rgb(var(--darkest)) !important;
@@ -2086,7 +2041,7 @@ body, h1, h2, h3, h4 {
 	  background: rgba(var(--dark),0.75);
 	  border-radius: var(--rounding);
 	  color: rgba(var(--accent),1);
-/*	  backdrop-filter: blur(7px); */
+	  backdrop-filter: blur(7px);
 	  top: 8em;
   }
 
@@ -2115,7 +2070,7 @@ body, h1, h2, h3, h4 {
 	  border-radius: var(--rounding-large);
 	  color: rgba(var(--accent),.75);
 	  background-color: rgba(var(--dark),.8);
-	/*  backdrop-filter: blur(6px); */
+	  backdrop-filter: blur(6px);
 }
 
   .cardBox-bottompadded {
@@ -2162,7 +2117,7 @@ body, h1, h2, h3, h4 {
   }
   
 .layout-tv {
-	font-size: 195% !important;
+	font-size: 200% !important;
 }
 
 .layout-tv .card:focus .cardBox.visualCardBox, .layout-tv .card:focus .cardBox:not(.visualCardBox) .cardScalable {
@@ -2170,11 +2125,11 @@ body, h1, h2, h3, h4 {
 	border-radius: 50px !important;
 	background-color: rgba(var(--accent),0.75);
 	box-shadow: 2px 3px 16px rgba(var(--accent),0.45);
-/*	backdrop-filter: blur(5px); */
+	backdrop-filter: blur(5px);
 }
 
 .layout-tv .missingIndicator, .layout-tv .unairedIndicator, .layout-tv .detailTable, .layout-tv .primaryImageWrapper > img, .layout-tv .toast, .layout-tv .cardContent, .layout-tv .sessionNowPlayingInnerContent, .layout-tv .listItem, .layout-tv .listItem:hover, .layout-tv .cardImage, .layout-tv .fab, .layout-tv .raised, .layout-tv .itemSelectionPanel, .layout-tv .cardContent-button, .layout-tv .cardContent-shadow, .layout-tv .itemDetailImage, .layout-tv .cardImageContainer, .layout-tv .cardPadder, .layout-tv .listItemImage, .layout-tv .listItemButton, .layout-tv .headerButton, .layout-tv .innerCardFooter, .layout-tv .blurhash-canvas, .layout-tv .dialog, .layout-tv .countIndicator, .layout-tv .playedIndicator, .layout-tv .listItemIcon, .layout-tv .listItem-border, .layout-tv .button-flat, .layout-tv .visualCardBox, .layout-tv .emby-select-withcolor, .layout-tv .chapterThumbTextContainer, .layout-tv .chapterThumbContainer, .layout-tv .chapterThumb, .layout-tv .emby-input, .layout-tv .emby-textarea, .layout-tv .emby-select-withcolor, .layout-tv .nowPlayingPageImage, .layout-tv .upNextDialog-poster-img, .layout-tv .upNextContainer {
-	border-radius: 38px !important;
+	border-radius: 33px !important;
 }
 
 .layout-tv .itemProgressBar {
@@ -2189,53 +2144,7 @@ body, h1, h2, h3, h4 {
 }
 
 
-
-.layout-tv .sectionTabs {
-	width: auto !important;
-	align-self: center !important;
-	margin-top: -1em;
-}
-
-.layout-tv .emby-tabs-slider .emby-button.show-focus:focus {
-	background: rgba(var(--accent),0.5) !important;
-	color: rgb(var(--dark));
-	border-radius: var(--rounding-circle);
-}
-
-.layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
-  background-color: inherit;
-}
-
-.layout-tv .emby-tab-button.emby-button.show-focus,
-.layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
-  margin: 0.4em;
-  height: 3.6em;
-}
-
-/* Turn off TabBar animation */
-
-.layout-tv .emby-tab-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-.layout-tv .emby-tab-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-.layout-tv .emby-tab-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-.layout-tv .emby-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-	background-color: rgba(var(--accent),.75) !important;
-	padding: 0.4em;
-	padding-right: 0.8em;
-	padding-left: 0.7em;
-	border-radius: 16px;   /* update */
-	color: rgb(var(--dark)) !important;
-}
+---------------------------------------------------------
 
 .layout-tv .headerRight {
 	height: auto !important;
@@ -2245,7 +2154,7 @@ body, h1, h2, h3, h4 {
 .layout-tv .chapterCard .innerCardFooter {
 	background: rgba(var(--dark), 0.5);
 	color: rgba(var(--accent), 0.9);
-/*	backdrop-filter: blur(5px); */
+	backdrop-filter: blur(5px);
 	width: 50%;
 	margin: 0 auto;
 	position: absolute;
@@ -2352,7 +2261,7 @@ body, h1, h2, h3, h4 {
 
 .layout-tv #childrenContent .listItem:focus {
 	background-color: rgba(var(--dark),.75);
-/*	backdrop-filter: blur(12px); */
+	backdrop-filter: blur(12px);
 }
 
 .layout-tv .listItemIndicators .indicator {
