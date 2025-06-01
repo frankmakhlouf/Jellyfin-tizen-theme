@@ -29,14 +29,14 @@
 
 /* Increase size of vertical posters on TV layout */
 .layout-tv .itemsContainer .card.overflowPortraitCard {
-  width: 20vw !important;
+  width: 30vw !important;
   aspect-ratio: 2 / 3 !important;
   height: auto !important;
 }
 
 /* Increase size of horizontal (backdrop) cards on TV */
 .layout-tv .card.overflowBackdropCard {
-  width: 28vw !important;
+  width: 35vw !important;
   height: auto !important;
   aspect-ratio: 16 / 9 !important;
 }
