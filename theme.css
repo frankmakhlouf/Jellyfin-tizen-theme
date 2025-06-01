@@ -37,7 +37,7 @@ body, h1, h2, h3, h4 {
   padding-top: 0.6em; 
 }
 /* Remove vertical wrap override */
-.layout-tv #childrenContent .vertical-wrap {
+.layout-tv #childrenContent .vertical-wrap {none120ms
   flex-wrap: nowrap !important;
 }
 /* Ensure each season card aligns nicely */
@@ -141,7 +141,7 @@ body, h1, h2, h3, h4 {
 .section0,
 .headerTabs,
 .nowPlayingBar {
-  transition: all 120ms linear !important; /* shortened duration */
+  transition: none !important; /* shortened duration */
 }
 
 
@@ -2162,7 +2162,7 @@ body, h1, h2, h3, h4 {
   }
   
 .layout-tv {
-	font-size: 185% !important;
+	font-size: 195% !important;
 }
 
 .layout-tv .card:focus .cardBox.visualCardBox, .layout-tv .card:focus .cardBox:not(.visualCardBox) .cardScalable {
