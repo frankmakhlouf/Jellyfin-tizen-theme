@@ -59,7 +59,7 @@
 
 /* Reduce horizontal spacing between cards */
 .layout-tv [dir="ltr"] .itemsContainer > .card > .cardBox {
-  margin-right: 10em !important;
+  margin-right: 5em !important;
 }
 
 /* Fix count/watched indicator */
