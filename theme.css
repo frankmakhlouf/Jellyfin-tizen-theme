@@ -29,14 +29,14 @@
 
 /* Increase size of vertical posters on TV layout */
 .layout-tv .itemsContainer .card.overflowPortraitCard {
-  width: 28vw !important;
+  width: 22vw !important;
   aspect-ratio: 2 / 3 !important;
   height: auto !important;
 }
 
 /* Increase size of horizontal (backdrop) cards on TV */
 .layout-tv .card.overflowBackdropCard {
-  width: 36vw !important;
+  width: 32vw !important;
   height: auto !important;
   aspect-ratio: 16 / 9 !important;
 }
@@ -59,7 +59,7 @@
 
 /* Reduce horizontal spacing between cards */
 .layout-tv [dir="ltr"] .itemsContainer > .card > .cardBox {
-  margin-right: 4em !important;
+  margin-right: 2.8em !important;
 }
 
 /* Fix count/watched indicator */
@@ -79,13 +79,13 @@
   width: 17vw !important;
   height: auto !important;
   aspect-ratio: 2 / 3 !important;
-  border-radius: var(--rounding) !important;
+  border-radius: 16px !important;
 }
 .layout-tv #castContent .cardImageContainer,
 .layout-tv #guestCastContent .cardImageContainer {
   aspect-ratio: 2 / 3 !important;
   object-fit: cover !important;
-  border-radius: var(--rounding) !important;
+  border-radius: 16px !important;
 }
 
 /* Reduce font size inside detail view */
@@ -106,7 +106,7 @@
 .layout-tv .cardBox.visualCardBox,
 .layout-tv .blurhash-canvas,
 .layout-tv .cardScalable {
-  border-radius: 16px !important;
+  border-radius: 19px !important;
 }
 
 /* Remove Zesty's default oversized focus border */
@@ -114,13 +114,13 @@
 .layout-tv .card.show-focus .cardScalable {
   border: none !important;
   box-shadow: none !important;
-  border-radius: 16px !important;
+  border-radius: 19px !important;
 }
 
 /* Add clean white border when focused */
 .layout-tv .card:focus-within .cardImageContainer {
   border: 0.3em solid rgba(var(--accent), 0.75) !important;
-  border-radius: 16px !important;
+  border-radius: 19px !important;
   outline: none !important;
 }
 
@@ -134,7 +134,7 @@
   font-size: 65% !important;
 }
 .layout-tv .listItemImage.listItemImage-large-tv {
-  height: 6em !important;
+  height: 7.5em !important;
   border-radius: 22px !important;
   overflow: hidden !important;
 }
@@ -142,7 +142,7 @@
   height: auto !important;
 }
 .layout-tv .parentName {
-  font-size: 1.8em !important;
+  font-size: 2.1em !important;
   font-weight: 600 !important;
 }
 .layout-tv .itemName.infoText.subtitle {
@@ -190,10 +190,6 @@
 
   /*  ###### Desktop Layout ##### */
 
-  .layout-desktop .detailLogo {
-    left: 5%;
-    background-position: left;
-  }
 
   .detailLogo {
 	  height: 16vh;
@@ -203,23 +199,13 @@
 	  width: 34em;
   }
 
-  .layout-desktop .itemBackdrop {
-    background-attachment: scroll;
-    background-position: center;
-    background-image: none !important;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-  }
-  .layout-tv .backgroundContainer, 
-  .layout-desktop .backgroundContainer {
+  .layout-tv .backgroundContainer {
     background-size: cover !important; /* fix for gradient on 2K and 4K displays */
     position: fixed;
     opacity: 100%;
   }
   /* controls gradient overlay properties - url to img in colorschemes */
-  .layout-tv .backgroundContainer
-  .layout-desktop .backgroundContainer {
+  .layout-tv .backgroundContainer {
     position: fixed;
     top: 0;
     right: 0;
@@ -228,63 +214,13 @@
     background-size: cover;
     opacity: 1;
   }
-  .layout-desktop .detailPageWrapperContainer {
-    margin-top: -89vh;
-    /* inicial: 73 */
-  }
 
-  .layout-desktop .detailImageContainer .card,
-  .layout-desktop .itemTags {
-    display: none;
-  }
-  .layout-desktop .cardImageIcon .material-icons .folder {
-    display: block !important;
-  }
 
   .detailsGroupItem.writersGroup,
   .detailsGroupItem.studiosGroup {
     display: none;
   }
 
-  .layout-desktop .detailPagePrimaryContainer,
-  .layout-desktop .detailPageContent {
-    padding-left: 5%;
-  }
-
-  .layout-desktop .detailPagePrimaryContent {
-    width: 45%;
-  }
-
-  .layout-desktop .detailPagePrimaryContainer {
-    display: inline-table;
-    z-index: 2;
-    left: 5%;
-  }
-
-  .layout-desktop .detailPageSecondaryContainer {
-    margin: 0 0 0em 0 !important;
-    padding-bottom: 0em !important;
-  }
-
-  .layout-desktop .itemDetailsGroup {
-    margin-top: 0;
-    padding-bottom: 0vh !important;
-  }
-
-  .layout-desktop a.overview-expand.emby-button {
-    margin: none;
-    padding: none;
-  }
-
-
-  .layout-desktop .itemName.originalTitle {
-    display: none;
-  }
-
-  .layout-desktop .itemName,
-  .layout-mobile .itemName {
-    font-weight: normal;
-  }
 
   .infoWrapper {
     margin-bottom: 3vh;
@@ -322,18 +258,7 @@
   .trackSelections .selectContainer{
     width: 480px !important;
   }
-  .layout-mobile .trackSelections .selectContainer #embyselect0,
-  .layout-mobile .trackSelections .selectContainer #embyselect2,
-  .layout-mobile .trackSelections .selectContainer #embyselect3 {
-    background-color: rgba(var(--darkest),.75) !important;
-  }
-  
-  .layout-mobile .trackSelections .emby-select {
-    width: 275px;
-  }
-  .layout-mobile .trackSelections .selectContainer{
-    width: 340px !important;
-  }
+ 
   
   /* Move track selection box */
   .detailSection {
@@ -379,38 +304,6 @@
       opacity: 1 !important;
   }
 
-  /* text layout - from Zombie */
-  .layout-desktop .btnShuffle,
-  .layout-desktop .listViewUserDataButtons,
-  .layout-desktop .material-icons.detailButton-icon.check,
-  .layout-desktop .material-icons.detailButton-icon.favorite,
-  .layout-desktop .material-icons.detailButton-icon.more_vert,
-  .layout-desktop .material-icons.detailButton-icon.replay,
-  .layout-desktop .material-icons.detailButton-icon.theaters {
-    display: none;
-  }
-  .layout-desktop .btnMoreCommands::after,
-  .layout-desktop .btnPlay::after,
-  .layout-desktop .btnPlayTrailer::after,
-  .layout-desktop .btnPlaystate::after,
-  .layout-desktop .btnReplay::after,
-  .layout-desktop .btnUserRating::after,
-  .layout-desktop .btntheaters::after {
-    content: attr(title);
-  }
-  /* resizes title box to encompass logo to "turn it into a link" */
-  .layout-desktop .itemName.parentNameLast {
-    height: 7em;
-  }
-  .layout-desktop h1.parentName {
-    margin: 1em 0px 0em !important;
-    padding-bottom: 3em;
-    height: 6em;
-   }
-  .layout-desktop #itemDetailPage .parentName .button-link {
-    height: 7em;  
-    width: 70%;
-  }
 
   /* fix for title being too high when there is no logo */  
   .nameContainer .itemName.infoText.parentNameLast > bdi {
@@ -428,51 +321,6 @@
       background-color: transparent;
   }
 
-  /* Prominent play button */
-
-  .layout-desktop .btnPlay {
-      background-color: rgb(var(--white));
-      color: rgb(var(--darkest)) !important;
-      margin-right: 3vw !important;
-      border-radius: calc(var(--rounding) + 2px) !important;
-  }
-
-  .layout-desktop .btnPlay:hover {
-    background-color: rgba(var(--accent));
-    color: rgb(var(--darkest)) !important;
-  }
-
-  .layout-desktop .mainAnimatedPages .paging {
-    margin-right: 1em !important;
-  }
-
-  .layout-desktop .detailPagePrimaryContainer .mainDetailButtons .btnPlay::after {
-    content: attr(title);
-    margin: 1px 11px 0 2px;
-    color: rgba(var(--darkest));
-  } 
-
-  .layout-desktop .detailPagePrimaryContainer .mainDetailButtons {
-    margin: 0em 0;
-  } 
-
-  .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-	  margin: 0;
-	  padding-bottom: .2em;
-	  padding-top: 1em;
-  }
-
-  .layout-desktop .material-icons.detailButton-icon.play_arrow {
-    color: rgba(var(--darkest));
-  }
-
-  .layout-desktop .btnPlay.detailButton {
-    flex-direction: row;
-  }
-
-  .layout-desktop .listViewUserDataButtons {
-    display: none;
-  }
 
   /* Hide shuffle and replay buttons in media page */
 
@@ -492,37 +340,11 @@
       background-color: rgba(var(--white), 0.13);
       color: rgba(var(--white), 1);
       font-size: 109%;
-
   }
 
-  .layout-mobile .mediaInfoOfficialRating {
-      border: 1px solid rgba(var(--white), 1);
-      border-radius: 7px;
-      background-color: rgba(var(--white), 0.13);
-      color: rgba(var(--white), 1);
-      font-size: 109%;
 
-  }
 
-  /* Resize cast, scenes and similar movies */
 
-  .layout-desktop #castContent .card.overflowPortraitCard {
-    font-size:95%!important;
-    width: 13.6em !important;
-  }
-
-  .layout-desktop #guestCastContent .card.overflowPortraitCard {
-    font-size:95%!important;
-    width: 13.6em !important;
-  }
-
-  .layout-desktop #similarCollapsible .card.overflowPortraitCard{
-    width: 14.6em !important;
-  }
-
-  .layout-desktop #scenesContent .card.itemAction.chapterCard{
-    width: 27.1em !important;
-  }
 
 
   /* scene chapters rounded overlay  */
@@ -549,12 +371,7 @@
 	  font-size: 110%;
   }
 
-  /* Add padding to description*/
-  .layout-desktop .detailSectionContent {
-   /*   margin-top: 1.25vw !important; */
-      padding: 0vw 0vw 0.25vw 0vw !important;
-  }
-
+ 
   /* makes description and tagline bold */
   .detailSectionContent .tagline {
     font-weight: bold;
@@ -1656,10 +1473,7 @@
   /* colorful */
 
 
-  /*Colors for Title ribbon */
-  .layout-desktop .detailRibbon {
-      background: rgba(0, 0, 0, 0);
-  }
+
   /* Item backdrop overlay color */
   .itemBackdrop::after {
     background: rgba(0,0,0,0) !important;
@@ -1747,9 +1561,6 @@
   /* glow around text on AppleTV-esque bar */
   body, h1, h2, h3, h4, .textActionButton, .emby-button-foreground  {
     text-shadow: 0px 0px 4px rgba(0,0,0,.6) !important;
-  }
-  .layout-desktop .headerTabs, .layout-desktop .headerRight {
-   box-shadow: 1px 3px 6px rgba(var(--darkest),.5);
   }
   .blurhashed {
 	  box-shadow: 1px 1px 4px 0px rgba(var(--darkest),.3) !important;
@@ -1925,12 +1736,6 @@
 
 
 
-
-  /* floating */
-
-
-
-
   /* Floating progressbar edit - from JellyFlix theme */
 
   .itemProgressBar {
@@ -1940,9 +1745,6 @@
     border-radius: 30px;
   }
 
-  .layout-mobile .itemProgressBar {
-    height: 8px;
-  }
 
   /* don't apply the blur inside Settings > Dashboard as it broke things for some reason */
   #dashboardPage .itemProgressBar {
@@ -2042,11 +1844,6 @@
     .listItem-content {
       height: 133px;
     }
-    .layout-desktop .sectionTabs {
-      width: auto !important;
-      align-self: center !important;
-      margin-top: -4em;
-    }
     .secondary.listItem-overview.listItemBodyText {
       height: 5.8em;
     }
@@ -2065,48 +1862,7 @@
       height: 2.5em; 
       margin: 0;
     }
-    .layout-desktop .sectionTabs {
-      width: auto !important;
-      align-self: center !important;
-      margin-top: -4em;
-    }
   }
-
-  /* Zen browser fix */
-  @media (min-width: 87.5em) and (max-width: 105em) {
-	  .layout-desktop .listItemImage.listItemImage-large.itemAction.lazy {
-		  height: 127px;
-		  width: 227px;
-	  }
-	  .layout-desktop.secondary.listItem-overview.listItemBodyText {
-		  height: 5.5em;
-		  margin: 0;
-	  }
-  }
-  @media (min-width: 45.5em) and (max-width: 87.4999em) {
-	  .layout-desktop .listItemImage.listItemImage-large.itemAction.lazy {
-		  height: 120px;
-		  width: 190px;
-	  }
-	  .layout-desktop .listItem-content {
-		  height: 130px;
-	  }
-	  .layout-desktop .listItem-content .listItemBody {
-		  height: 8em;
-	  }
-  }
-  /* Fix for logos on 2K screens */
-  @media (min-width: 130em) {
-    .layout-desktop .detailPageWrapperContainer {
-        margin-top: -84vh;
-    }
-    .layout-desktop .detailLogo {
-        width: 36em;
-    }
-  }  
-  /* #### login frame #### */
-
-
 
 
   /*Narrow the login form, size according to display size (bigger on mobile)*/
@@ -2264,15 +2020,6 @@
     font-size: 125%;
   }
 
-  /* increase header bar icon sizes */
-  .layout-desktop .headerTop {
-   font-size: 125%;
-  }
-
-  /* increases sidebar icon sizes to match above */
-  .layout-desktop .drawerContent {
-	  font-size: 110%;
-  }
 
   .mainDrawer-scrollContainer {
 	  font-size: 110%;
@@ -2463,15 +2210,6 @@
   }*/
 
 
-  /* rounds and pads episode list */
-
-  .layout-desktop #childrenContent .listItem {
-	  padding-left: 1em !important;
-	  padding-right: 0.5em !important;
-	  padding-top: 0.7em !important;
-	  padding-bottom: 0.7em !important;
-	  border-radius: 28px !important;
-  }
 
   #childrenContent .listItem:hover:not(.listItem-button) {
 	  background-color: rgba(var(--darkest),0.6);
@@ -2715,24 +2453,12 @@
   }
 
 
-  /* Mobile fixes */
-  .layout-mobile .headroom--unpinned {
-      transform: translateY(-50%);
-  }
-
-
-  /* AppleTV-esque bar */
-
 
   /* Transparent header bar */
   .skinHeader {
       background-color: transparent !important;
   }
-  .layout-desktop .skinHeader {
-      padding-top: 1.5em !important;
-      padding-bottom: 1.5em !important;
-  }
-
+  
   /* Button height */
   .headerRight,
   .layout-desktop .emby-tab-button {
@@ -2765,13 +2491,6 @@
     width: fit-content !important;
   }
 
-  .layout-desktop .itemsContainer, .layout-desktop .emby-tabs-slider {
-	  margin: 0 !important;
-  }
-
-  .layout-desktop .homeLibraryButton, .layout-desktop .emby-tab-button {
-	  margin: .5em !important;
-  }
 
   .raised:hover .homeLibraryText, .emby-tab-button:hover .emby-button-foreground {
 	  color: rgb(var(--darkest)) !important;
@@ -2881,26 +2600,6 @@
 	  font-size: 110%;
   }
 
-
-  .layout-desktop #childrenCollapsible .padded-right {
-	  padding-right: 38%;
-  }
-
-  /* Moves TV shows Up Next to bottom right */
-  .layout-desktop .nextUpSection {
-	  border-radius: 34px;
-	  left: calc(70vw - 0.5em);
-	  margin-right: -30vw;
-	  margin-top: 25vh;
-	  margin-bottom: 1vh;
-	  padding-left: 2.62em;
-	  margin-right: 5vw;
-	  background-color: rgba(var(--darkest),.77);
-	  padding-top: .3em;
-	  backdrop-filter: blur(10px);
-	  position: absolute;
-	  /* margin-left: 1.5vw; */
-  }
   
   /* Tweaks up Next dialog */
   [dir="ltr"] .upNextContainer {
@@ -2920,15 +2619,6 @@
 	  margin-top: 0.8em;
   }
 
-  .layout-desktop .nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata {
-	  right: 0.7em;
-	  position: relative;
-  }
-
-  .layout-desktop .nextUpSection .cardBox-bottompadded {
-	  margin-bottom: 1.3em !important;
-  }
-  
   /* changes the color of filter indicator */
   .filterIndicator {
 	  background: rgba(var(--accent));
@@ -2938,71 +2628,6 @@
 	  background-image: linear-gradient(rgba(var(--honey-yellow),.55), rgba(var(--honey-yellow),.55));
   }
 
-
-
-
-
-  /* Makes posters larger in the Library view and Home screen */
-  @media (min-width: 31.25em) {
-  .layout-desktop  .portraitCard, .layout-desktop .smallBackdropCard, .layout-desktop .squareCard {
-	    width: 33.3333333333%;
-    }
-  }
-
-  @media (min-width: 43.75em) {
-  .layout-desktop  .portraitCard, .layout-desktop .squareCard {
-	    width: 25%;
-    }
-  }
-
-  @media (min-width: 50em) {
-  .layout-desktop  .portraitCard, .layout-desktop .squareCard {
-	    width: 20%;
-    }
-  .layout-desktop  .overflowPortraitCard, .layout-desktop .overflowSquareCard {
-	    width: 15vw;
-    }
-  }
-
-  @media (min-width: 75em) {
-  .layout-desktop .portraitCard, .layout-desktop .squareCard {
-	    width: 16.6666666667%;
-    }
-  .layout-desktop .overflowPortraitCard, .layout-desktop .overflowSquareCard {
-	    width: 14.4vw;
-    }
-  }
-
-  @media (min-width: 87.5em) {
-  .layout-desktop .portraitCard, .layout-desktop .smallBackdropCard, .layout-desktop .squareCard {
-	    width: 14%;
-    }
-  .layout-desktop .overflowPortraitCard, .layout-desktop .overflowSquareCard {
-	    width: 13.3vw;
-    }
-  }
-
-  @media (min-width: 100em) {
-  .layout-desktop .overflowPortraitCard, .layout-desktop .overflowSquareCard {
-	    width: 11.8vw;
-    }
-  }
-
-  @media (min-width: 120em) {
-  .layout-desktop .overflowPortraitCard, .layout-desktop .overflowSquareCard {
-	    width: 11.41vw;
-    }
-  }
-
-  .layout-mobile .itemBackdrop {
-	  position: relative;
-	  background-size: cover;
-	  height: 40vh;
-	  margin-top: 0;
-	  -webkit-mask-image: linear-gradient(to top, rgba(var(--dark-apparent),0) 2%, rgba(var(--dark-apparent),0.08) 11%, rgba(var(--dark-apparent),0.25) 20%, rgba(var(--dark-apparent),0.45) 28%, rgba(var(--dark-apparent),0.6) 33%, rgba(var(--dark-apparent),1) 48%);
-	  mask-image: linear-gradient(to top, rgba(var(--dark-apparent),0) 2%, rgba(var(--dark-apparent),0.08) 11%, rgba(var(--dark-apparent),0.25) 20%, rgba(var(--dark-apparent),0.45) 28%, rgba(var(--dark-apparent),0.6) 33%, rgba(var(--dark-apparent),1) 48%);
-	  background-position: 70%;
-  }
 
 
   /* --- ### PLUGINS ### --- */
@@ -3016,10 +2641,7 @@
 	  bottom: 20%;
 	  right: 8%;
   }
-  .layout-mobile .skip-button {
-    bottom: 28%;
-    right: 2%;
-  }
+
   .skip-button:hover {
 	  background-color: rgba(var(--accent));
   }
@@ -3045,7 +2667,7 @@
 }
 
 .layout-tv .missingIndicator, .layout-tv .unairedIndicator, .layout-tv .detailTable, .layout-tv .primaryImageWrapper > img, .layout-tv .toast, .layout-tv .cardContent, .layout-tv .sessionNowPlayingInnerContent, .layout-tv .listItem, .layout-tv .listItem:hover, .layout-tv .cardImage, .layout-tv .fab, .layout-tv .raised, .layout-tv .itemSelectionPanel, .layout-tv .cardContent-button, .layout-tv .cardContent-shadow, .layout-tv .itemDetailImage, .layout-tv .cardImageContainer, .layout-tv .cardPadder, .layout-tv .listItemImage, .layout-tv .listItemButton, .layout-tv .headerButton, .layout-tv .innerCardFooter, .layout-tv .blurhash-canvas, .layout-tv .dialog, .layout-tv .countIndicator, .layout-tv .playedIndicator, .layout-tv .listItemIcon, .layout-tv .listItem-border, .layout-tv .button-flat, .layout-tv .visualCardBox, .layout-tv .emby-select-withcolor, .layout-tv .chapterThumbTextContainer, .layout-tv .chapterThumbContainer, .layout-tv .chapterThumb, .layout-tv .emby-input, .layout-tv .emby-textarea, .layout-tv .emby-select-withcolor, .layout-tv .nowPlayingPageImage, .layout-tv .upNextDialog-poster-img, .layout-tv .upNextContainer {
-	border-radius: 48px !important;
+	border-radius: 38px !important;
 }
 
 .layout-tv .itemProgressBar {
@@ -3184,7 +2806,7 @@
   .layout-tv .material-icons.detailButton-icon.more_vert,
   .layout-tv .material-icons.detailButton-icon.replay,
   .layout-tv .material-icons.detailButton-icon.theaters {
-    display: none;
+    display: block;
   }
 
   .layout-tv .btnMoreCommands::after,
@@ -3212,10 +2834,10 @@
 }
 
 .layout-tv #childrenContent .listItem {
-	padding-left: 1.2em !important;
+	padding-left: 1em !important;
 	padding-right: 1.2em !important;
-	padding-top: 1em !important;
-	padding-bottom: 1em !important;
+	padding-top: 0.4em !important;
+	padding-bottom: 0.4em !important;
 	border-radius: 34px !important;
 }
 
@@ -3229,7 +2851,7 @@
 }
 
 .layout-tv .listItemIndicators .countIndicator, .layout-tv .listItemIndicators .playedIndicator {
-	border-radius: 0px 48px 0px 48px !important;
+	border-radius: 0px 38px 0px 38px !important;
 }
 
 .layout-tv .listItemBody {
@@ -3245,5 +2867,23 @@
   font-size: 1.95em;
   font-weight: 600;
 }
+
+  /* text layout - from Zombie */
+  .layout-tv .btnShuffle,
+  .layout-tv .material-icons.detailButton-icon.replay,
+  .layout-tv .material-icons.detailButton-icon.theaters
+  .layout-tv .btnPlayTrailer {
+    display: none;
+  }
+
+  .layout-tv .btnMoreCommands::after,
+  .layout-tv .btnPlay::after,
+  .layout-tv .btnPlayTrailer::after,
+  .layout-tv .btnPlaystate::after,
+  .layout-tv .btnReplay::after,
+  .layout-tv .btnUserRating::after,
+  .layout-tv .btntheaters::after {
+    content: attr(title);
+  }
 
 
