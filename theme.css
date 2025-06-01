@@ -54,6 +54,44 @@
 }
 
 
+/* ---Kill smooth scroll on vertical section focus--- */
+html,
+body,
+.layout-tv .pageContainer,
+.layout-tv .scrollY,
+.layout-tv .scrollMainContainer,
+.layout-tv .verticalSection,
+.layout-tv .mainScroller,
+.layout-tv .focuscontainer-vertical,
+.layout-tv .scrollFrame,
+.layout-tv .scrollContainer,
+.layout-tv .dialog-scroll {
+  scroll-behavior: auto !important;
+}
+
+
+
+/* ----------Make Long Titles Use Two Lines----------*/
+.layout-tv .cardText.cardText-first {
+  font-size: 1.3em !important; /* your custom size */
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-lines: 2; /* optional, not fully supported on all engines */
+  display: block;
+  line-height: 1.2em;
+  max-height: 2.4em; /* 2 lines at 1.2em each */
+}
+
+/* ------Completely hide the Guest section------ */
+#guestCastCollapsible {
+    display: none !important;
+}
+
+/* ----------Hide Director ----------*/
+.detailsGroupItem.directorsGroup {
+    display: none !important;
+}
 
 /* ----------Hide genres ----------*/
 .detailsGroupItem.genresGroup {
@@ -149,7 +187,7 @@
 /* Make cast cards match standard vertical posters */
 .layout-tv #castContent .card.overflowPortraitCard,
 .layout-tv #guestCastContent .card.overflowPortraitCard {
-  width: 17vw !important;
+  width: 13vw !important;
   height: auto !important;
   aspect-ratio: 2 / 3 !important;
   border-radius: 19px !important;
@@ -179,7 +217,7 @@
 .layout-tv .cardBox.visualCardBox,
 .layout-tv .blurhash-canvas,
 .layout-tv .cardScalable {
-  border-radius: 19px !important;
+  border-radius: 21px !important;
 }
 
 /* Remove Zesty's default oversized focus border */
@@ -193,7 +231,7 @@
 /* Add clean white border when focused */
 .layout-tv .card:focus-within .cardImageContainer {
   border: 0.3em solid rgba(var(--accent), 0.75) !important;
-  border-radius: 19px !important;
+  border-radius: 21px !important;
   outline: none !important;
 }
 
@@ -1907,15 +1945,7 @@
     display: inline-flex;
   }
 
-  /* Rounded header buttons */
 
-  .headerTabs,
-  .headerRight {
-      background-color:rgba(var(--white-off), 0.35) !important;
-      border-radius: var(--rounding-circle) !important;
-      color: rgba(var(--darkest)) !important;
-      backdrop-filter: blur(50px) !important;
-  }
 
   .homeLibraryText, .emby-button-foreground {
 	  color: rgb(var(--darkest));
@@ -2121,7 +2151,6 @@
 .layout-tv .sectionTabs {
 	width: auto !important;
 	align-self: center !important;
-	margin-top: -1em;
 }
 
 .layout-tv .emby-tabs-slider .emby-button.show-focus:focus {
