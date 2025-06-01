@@ -2,7 +2,7 @@
 
 /*---FONT---*/
 body, h1, h2, h3, h4 {
-  font-family: sans-serif !important;
+  font-family: Tahoma, sans-serif !important;
 }
 
 
@@ -178,8 +178,8 @@ body, h1, h2, h3, h4 {
 
 /* Reduce font of title and description */
 .layout-tv .cardText.cardText-first {
-  font-size: 105% !important;
-  font-weight: 500 !important;
+  font-size: 115% !important;
+  font-weight: 550 !important;
   margin-top: 0.4em;
 }
 .layout-tv .cardText.cardText-secondary {
