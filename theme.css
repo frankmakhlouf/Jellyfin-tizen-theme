@@ -54,6 +54,29 @@
 }
 
 
+
+/*-----------------KILL ANIMATION-------------------*/
+/* Kill vertical scroll lag and make focus jumps instant */
+html,
+body,
+.layout-tv .pageContainer,
+.layout-tv .scrollY,
+.layout-tv .scrollMainContainer,
+.layout-tv .verticalSection,
+.layout-tv .mainScroller,
+.layout-tv .focuscontainer-vertical,
+.layout-tv .scrollFrame,
+.layout-tv .scrollContainer,
+.layout-tv .dialog-scroll {
+  scroll-behavior: auto !important;
+}
+.layout-tv .verticalSection,
+.layout-tv .scrollY,
+.layout-tv .scrollMainContainer,
+.layout-tv .scrollFrame {
+  transition: none !important;
+  will-change: auto !important;
+}
 /* ---Kill smooth scroll on vertical section focus--- */
 html,
 body,
