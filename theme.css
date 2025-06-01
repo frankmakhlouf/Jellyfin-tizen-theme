@@ -866,9 +866,6 @@
   }
 
 
-  /* indicator corner */
-
-
 
   /*Card indicators style corner*/
 
@@ -939,7 +936,6 @@
 
 
   /* colorful */
-
 
 
   /* Item backdrop overlay color */
@@ -1576,11 +1572,6 @@
 
 
 
-
-
-
-
-
   /* dialogs */
   .dialog, .mainDrawer, .appfooter {
 	  backdrop-filter: blur(21px);
@@ -1727,19 +1718,6 @@
       padding: 0.8em;
   }
 
-  /* makes progressbar in the Settings > Dashboard nicer */
-  #dashboardPage .activeSession .backgroundProgress, .activeSession .playbackProgress, .activeSession .transcodingProgress {
-	  bottom: 0.6em;
-	  height: 8px;
-	  left: 0.7em;
-	  position: absolute;
-	  right: 0.7em;
-	  width: 94%;
-  }
-
-  #dashboardPage .itemProgressBar {
-    background: rgba(var(--dark-highlight),.35) !important;
-  }
 
   .dialogContainer .focuscontainer {
 	  border-radius: var(--rounding-large) !important;
@@ -1791,7 +1769,6 @@
 
 
   /* fields no border */
-
 
 
   /*No borders, background highlights*/
