@@ -29,14 +29,14 @@
 
 /* Increase size of vertical posters on TV layout */
 .layout-tv .itemsContainer .card.overflowPortraitCard {
-  width: 30vw !important;
+  width: 28vw !important;
   aspect-ratio: 2 / 3 !important;
   height: auto !important;
 }
 
 /* Increase size of horizontal (backdrop) cards on TV */
 .layout-tv .card.overflowBackdropCard {
-  width: 35vw !important;
+  width: 36vw !important;
   height: auto !important;
   aspect-ratio: 16 / 9 !important;
 }
@@ -50,8 +50,8 @@
 
 /* Reduce font of title and description */
 .layout-tv .cardText.cardText-first {
-  font-size: 110% !important;
-  margin-top: 0.3em;
+  font-size: 115% !important;
+  margin-top: 0.4em;
 }
 .layout-tv .cardText.cardText-secondary {
   font-size: 95% !important;
@@ -59,7 +59,7 @@
 
 /* Reduce horizontal spacing between cards */
 .layout-tv [dir="ltr"] .itemsContainer > .card > .cardBox {
-  margin-right: 5em !important;
+  margin-right: 4em !important;
 }
 
 /* Fix count/watched indicator */
@@ -361,10 +361,10 @@
       box-ordinal-group: 4;
   }
 
-  /* hides movie name only when there is a logo - tweaked from Zombie */
+  /* hides movie name only when there is a logo - tweaked from Zombie, changed it to 1 to show the title FM */
   #itemDetailPage .itemName.infoText.parentNameLast > bdi:first-child,
   #itemDetailPage .parentName > bdi:first-child {
-      opacity: 0;
+      opacity: 1;
   }
   .hide + .detailPageWrapperContainer .itemName > bdi:first-child,
   .hide + .parentName > bdi:first-child {
@@ -3194,11 +3194,11 @@
   }
 
 .layout-tv #childrenCollapsible .padded-right {
-	padding-right: 20%;
+	padding-right: 14%;
 }
 
 .layout-tv .detailSection .detailSectionContent {
-	padding-right: 25%;
+	padding-right: 18%;
 	padding-left: 2%;
 }
 
@@ -3208,11 +3208,11 @@
 }
 
 .layout-tv #childrenContent .listItem {
-	padding-left: 1.6em !important;
-	padding-right: 1.6em !important;
-	padding-top: 1.6em !important;
-	padding-bottom: 1.6em !important;
-	border-radius: 94px !important;
+	padding-left: 1.2em !important;
+	padding-right: 1.2em !important;
+	padding-top: 1em !important;
+	padding-bottom: 1em !important;
+	border-radius: 34px !important;
 }
 
 .layout-tv #childrenContent .listItem:focus {
@@ -3238,7 +3238,7 @@
 }
 
 .layout-tv .verticalSection h2 {
-  font-size: 1.75em;
+  font-size: 1.95em;
   font-weight: 600;
 }
 
