@@ -13,7 +13,7 @@
     --rounding: 12px;
     --rounding-alt: 9px;
     --rounding-large: 21px;
-    --rounding-circle: 60px;
+    --rounding-circle: 35px;
   }
 
 
@@ -70,18 +70,34 @@ body,
 }
 
 
-
-/* ----------Make Long Titles Use Two Lines----------*/
-.layout-tv .cardText.cardText-first {
-  font-size: 1.3em !important; /* your custom size */
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-  max-lines: 2; /* optional, not fully supported on all engines */
-  display: block;
-  line-height: 1.2em;
-  max-height: 2.4em; /* 2 lines at 1.2em each */
+/*---------LIBRARY GRID-----------*/
+/* Tighter container padding, override alpha picker spacing */
+.itemsContainer-tv.padded-left.padded-right-withalphapicker {
+  padding-left: 2.5vw !important;
+  padding-right: 1.5vw !important;
+  justify-content: space-between !important; /* Force full spread */
 }
+/* Adjust card width slightly to better fill row */
+.itemsContainer-tv > .portraitCard,
+.itemsContainer-tv > .squareCard {
+  width: 20.5% !important; /* Four across = 90%, leaves ~10% for gaps */
+  margin: 0 !important;
+}
+
+
+
+
+/* -------- HIDE TABS 4 & 5--------- */
+
+/* Hide tab 5 in the top navigation bar */
+.emby-tab-button[data-index="5"] {
+    display: none !important;
+}
+/* Hide tab 4 in the top navigation bar */
+.emby-tab-button[data-index="4"] {
+    display: none !important;
+}
+
 
 /* ------Completely hide the Guest section------ */
 #guestCastCollapsible {
@@ -127,12 +143,13 @@ body,
 }
 
 
+
 /* ----------------------------------------------------- */
-/*                        TV LAYOUT STYLES              */
+/*                        TV LAYOUT STYLES                */
 /* ----------------------------------------------------- */
 .layout-tv .sectionTitleContainer-cards {
   margin: 0 !important;
-  padding-top: 0.3em !important;
+  padding-top: 0.6em !important;
   padding-bottom: 0.2em !important;
 }
 
@@ -159,7 +176,7 @@ body,
 
 /* Reduce font of title and description */
 .layout-tv .cardText.cardText-first {
-  font-size: 115% !important;
+  font-size: 105% !important;
   font-weight: 500 !important;
   margin-top: 0.4em;
 }
@@ -2122,7 +2139,7 @@ body,
   }
   
 .layout-tv {
-	font-size: 190% !important;
+	font-size: 170% !important;
 }
 
 .layout-tv .card:focus .cardBox.visualCardBox, .layout-tv .card:focus .cardBox:not(.visualCardBox) .cardScalable {
