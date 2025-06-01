@@ -73,8 +73,8 @@ body,
 /*---------LIBRARY GRID-----------*/
 /* Tighter container padding, override alpha picker spacing */
 .itemsContainer-tv.padded-left.padded-right-withalphapicker {
-  padding-left: 2.5vw !important;
-  padding-right: 1.5vw !important;
+  padding-left: 7vw !important;
+  padding-right: 4.5vw !important;
   justify-content: space-between !important; /* Force full spread */
 }
 /* Adjust card width slightly to better fill row */
@@ -84,6 +84,12 @@ body,
   margin: 0 !important;
 }
 
+
+
+/*------ Pull poster closer to left edge in show/movie view----*/
+.detailImageContainer .card {
+  margin-left: -1vw !important; /* pulls image left slightly */
+}
 
 
 
@@ -270,12 +276,12 @@ body,
   height: auto !important;
 }
 .layout-tv .parentName {
-  font-size: 2.1em !important;
+  font-size: 2.5em !important;
   font-weight: 600 !important;
 }
 .layout-tv .itemName.infoText.subtitle {
   font-size: 1.6em !important;
-  font-weight: 500 !important;
+  font-weight: 460 !important;
 }
 .layout-tv .mainDetailButtons {
   padding-top: 0.2em !important;
@@ -2183,7 +2189,7 @@ body,
 .layout-tv .emby-tab-button.emby-button.show-focus,
 .layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
   margin: 0.4em;
-  height: 3.6em;
+  height: 3.1em;
 }
 
 /* Turn off TabBar animation */
@@ -2242,14 +2248,14 @@ body,
 
 .layout-tv #castContent .card.overflowPortraitCard {
 	font-size: 100% !important;
-	width: 17.3em !important;
+	width: 14.3em !important;
 	margin-left: 0vw !important;
 	height: 37vh;
 }
 
 .layout-tv #guestCastContent .card.overflowPortraitCard {
 	font-size: 100% !important;
-	width: 17.3em !important;
+	width: 14.3em !important;
 	margin-left: 0vw !important;
 	height: 37vh;
 }
