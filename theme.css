@@ -94,7 +94,6 @@ body,
 
 
 /* -------- HIDE TABS 4 & 5--------- */
-
 /* Hide tab 5 in the top navigation bar */
 .emby-tab-button[data-index="5"] {
     display: none !important;
@@ -102,6 +101,16 @@ body,
 /* Hide tab 4 in the top navigation bar */
 .emby-tab-button[data-index="4"] {
     display: none !important;
+}
+
+/* Add bottom padding to the main top header bar */
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  padding-bottom: 0.3em !important;
+}
+
+/* Move the header tabs upward */
+.headerTabs.sectionTabs {
+  margin-top: -3.6em !important;
 }
 
 
@@ -322,7 +331,7 @@ body,
   }
 
 
-  /*  ###### Desktop Layout ##### */
+
 
 
   .detailLogo {
@@ -1526,9 +1535,9 @@ body,
   /* increase player header and bottom icon sizes */
 
   .osdHeader .headerTop {
-	  max-height: 3em;
+	  max-height: 3.5em;
 	  pointer-events: all;
-	  font-size: 125%;
+	  font-size: 115%;
   }
 
   .videoOsdBottom .buttons {
@@ -1951,25 +1960,6 @@ body,
   }
 
 
-
-  /* Transparent header bar */
-  .skinHeader {
-      background-color: transparent !important;
-  }
-  
-  /* Button height */
-  .headerRight,
-  .layout-desktop .emby-tab-button {
-      height: 45px !important;
-  }
-
-  /* fixes issue with text no being centered */
-  .emby-tab-button {
-    display: inline-flex;
-  }
-
-
-
   .homeLibraryText, .emby-button-foreground {
 	  color: rgb(var(--darkest));
   }
@@ -2176,46 +2166,7 @@ body,
 	align-self: center !important;
 }
 
-.layout-tv .emby-tabs-slider .emby-button.show-focus:focus {
-	background: rgba(var(--accent),0.5) !important;
-	color: rgb(var(--dark));
-	border-radius: var(--rounding-circle);
-}
-
-.layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
-  background-color: inherit;
-}
-
-.layout-tv .emby-tab-button.emby-button.show-focus,
-.layout-tv .emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused {
-  margin: 0.4em;
-  height: 3.1em;
-}
-
-/* Turn off TabBar animation */
-
-.layout-tv .emby-tab-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-.layout-tv .emby-tab-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-.layout-tv .emby-tab-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-.layout-tv .emby-button.show-focus:focus {
-	-webkit-transform: none !important;
-	transform: none !important;
-	background-color: rgba(var(--accent),.75) !important;
-	padding: 0.4em;
-	padding-right: 0.8em;
-	padding-left: 0.7em;
-	border-radius: 16px;   /* update */
-	color: rgb(var(--dark)) !important;
-}
+---------------------------------------------------------
 
 .layout-tv .headerRight {
 	height: auto !important;
