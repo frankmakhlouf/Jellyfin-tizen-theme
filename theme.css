@@ -2309,3 +2309,7 @@
     border-radius: calc(var(--rounding) + 5px);
 }
 
+/*Hide the "Trailers" tab in Movies*/
+.mainDrawer:has(.navMenuOption-selected[href^="#/movies.html"]) + .skinHeader .emby-tab-button[data-index="2"] {
+display: none !important;
+}
