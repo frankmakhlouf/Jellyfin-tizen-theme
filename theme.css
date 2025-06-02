@@ -53,7 +53,23 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
+/* ——INTRO SKIP BUTTON----- */
+.skip-button {
+    position: fixed !important;
+    bottom: 16% !important;
+    right: 75px !important; /* tightened spacing from right edge */
+    z-index: 9999 !important;
+    transform: none !important;
+    margin: 0 !important;
+    background-color: rgba(var(--accent)) !important; /* simulate hover state */
+    color: rgba(var(--darkest));
+    border-radius: calc(var(--rounding) + 5px);
+}
 
+/*Hide the "Trailers" tab in Movies*/
+.mainDrawer:has(.navMenuOption-selected[href^="#/movies.html"]) + .skinHeader .emby-tab-button[data-index="2"] {
+display: none !important;
+}
 
 
 /*---------LIBRARY GRID-----------*/
