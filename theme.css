@@ -2330,3 +2330,8 @@ display: none !important;
 .mainDrawer:has(.navMenuOption-selected[href^="#/movies.html"]) + .skinHeader .emby-tab-button[data-index="2"] {
 display: none !important;
 }
+
+/*----Change size of logo---*/
+.pageTitle {
+    height: 2.0em !important;
+}
