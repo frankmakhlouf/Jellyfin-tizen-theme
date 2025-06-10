@@ -2333,5 +2333,11 @@ display: none !important;
 
 /*----Change size of logo---*/
 .pageTitle {
-    height: 2.0em !important;
+    height: 3.0em !important;
+}
+.pageTitleWithLogo {
+  background-size: 220px auto !important;
+  background-repeat: no-repeat !important;
+  background-position: left !important;  
+  min-height: 63px !important;
 }
