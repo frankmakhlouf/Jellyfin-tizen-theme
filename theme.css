@@ -2286,7 +2286,7 @@ display: none !important;
 }
 
 .layout-tv .listItemIndicators .countIndicator, .layout-tv .listItemIndicators .playedIndicator {
-	border-radius: 0px 38px 0px 38px !important;
+	border-radius: 0px 0px 0px 38px !important;
 }
 
 
