@@ -205,7 +205,8 @@ display: none !important;
 
 /* Fix count/watched indicator */
 .layout-tv .playedIndicator,
-.layout-tv .countIndicator {
+.layout-tv .countIndicator.
+.layout-tv .videoIndicator {
   font-size: 110% !important;
   top: 0em !important;
   right: 0em !important;
