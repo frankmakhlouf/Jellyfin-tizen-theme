@@ -2215,8 +2215,8 @@ display: none !important;
 .layout-tv .indicator {
 	height: 2.5em;
 	width: 2.5em;
-	top: -10px;
-	position: relative;
+	top: 0px !important;
+	position: absolute !important;
 }
 
 .layout-tv .countIndicator, .layout-tv .playedIndicator {
